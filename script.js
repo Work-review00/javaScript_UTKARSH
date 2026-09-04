@@ -203,9 +203,208 @@ console.log(twenty(200));*/
 
 
 
-
+/*
 
 function greet(name){
     return "hello "+name;
 };
 console.log(greet("utkarsh"));
+
+*/
+
+/*
+function add(a,b){
+    return a+b;
+}
+console.log(add(10,20));
+
+
+// Q3  Ek function square(n) banao jo number ka square return kare.
+
+function square(num){
+    return num*num;
+}
+
+console.log(square(20));
+
+
+
+//Q4  Ek function isEven(n) banao jo true return kare agar number even hai, otherwise false.
+
+
+
+function iseven(num){
+    if(num%2===0){
+        return "num is even";
+    }
+    else{
+        return "num is odd";
+    }
+}
+
+
+console.log(iseven(45));
+
+//Q5  Ek function max(a, b) banao jo dono mein se greater number return kare.
+   
+function greateris(a,b){
+    if(a>b){
+        return "a is greater than b";
+    }
+    else {
+        return "b is greater than a";
+    }
+}
+
+console.log(greateris(25,85));
+
+//Q6  Function banao jo kisi number ka cube return kare.
+
+
+
+function cube(a,b){
+    return a**b;
+
+}
+
+console.log(cube(4,3));
+
+
+
+//Q7 Function banao jo 3 numbers ka average return kare.
+
+
+function average(a,b,c){
+    return (a+b+c)/3;
+}
+
+console.log(average(40,50,60));
+
+//Q8 Function banao jo age receive kare:
+
+
+function age(num){
+    if(num>=18){
+        console.log("allowed");
+    }
+    else{
+        console.log("not allowed");
+    }
+}
+
+age(85);
+
+
+//Q9  function banao jo number check kare: positive → "Positive", negative → "Negative",  zero → "Zero"
+
+function check(num){
+    if(num>0){
+        console.log("number is postive");
+    }
+    else if(num<0){
+        console.log("num is negative");
+    }
+    else if(num ===0){
+        console.log("num is zero")
+    }
+}
+
+check(54);
+
+//Q 10 Function banao jo kisi number ka factorial calculate kare.
+
+function calculatefactorial(n){
+    if(n<0){
+        return "for negative number there is nothing define for factorial";
+    }
+
+
+    let result=1;
+    for(let i=1;i<=n;i++){
+         result= result*i;
+    }
+    return result;
+}
+
+
+
+ 
+console.log(calculatefactorial(5));
+
+
+
+*/
+
+
+
+// array
+
+
+/*
+arr=["banana","apple","mango"];
+arr.push("mango");
+arr.unshift("pinapple");
+arr.splice(2,1);
+arr.push("kiwi");
+arr.splice(2,1,"orange");
+
+
+
+
+let item=[1,2,3,4,5,6,7,8,9];
+item.splice(4,3);
+let newitem=item.slice(1,6);
+console.log(newitem);
+
+
+
+
+
+
+
+let names=["utkarsh","harsh","atul","shaurya","addi bhaiya","bhaiya ji"];
+
+names.sort();
+*/
+
+
+let arr=[1,2,3,4];
+let newarr=arr.map(function(val){
+    return val*val;
+});
+
+
+
+let num=[19,25,76,6,3,74,98,92];
+let newnum=num.filter(function(val){
+    return val>10;
+});
+
+
+
+let hello=[10,12,34,54,65];
+let newhello=hello.reduce(function(acc,val){
+    return acc+val;
+},0);
+
+
+
+
+let arrr=[12,10,25,363,5,9,128];
+let newarrr=arrr.find(function(val){
+    return val<10;
+});
+
+let atul=[12,10,25,363,5,9,128];
+let newatul=atul.some(function(val){
+    return val<35;
+});
+
+
+let shaurya=[12,26,16,14,29,18,28,36];
+
+let newshaurya=shaurya.every(function(val){
+    return val%2===0;
+});
+
+ 
