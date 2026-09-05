@@ -367,7 +367,7 @@ let names=["utkarsh","harsh","atul","shaurya","addi bhaiya","bhaiya ji"];
 names.sort();
 */
 
-
+/*
 let arr=[1,2,3,4];
 let newarr=arr.map(function(val){
     return val*val;
@@ -406,5 +406,276 @@ let shaurya=[12,26,16,14,29,18,28,36];
 let newshaurya=shaurya.every(function(val){
     return val%2===0;
 });
+  
 
+*/
+
+
+
+
+/*
+//05,sep, 2026
+
+//methods of array:
+
+
+//push()->end mein value add karta hai
+
+
+ let fruits = ["Apple", "Mango"];
+
+fruits.push("Banana");
+
+console.log(fruits);
+
+
+// pop()->end se value remove karta hai
+
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+fruits.pop();
+
+console.log(fruits);
+
+
+
+//unshift()->beginning mein add karta hai
+
+let fruits = ["Mango", "Banana"];
+
+fruits.unshift("Apple");
+
+console.log(fruits);
+
+
+//shift() — beginning se remove karta hai
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+fruits.shift();
+
+console.log(fruits);
+
+
+//includes() — check karta hai value present hai ya nahi
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+console.log(fruits.includes("Mango"));
+
+//indexOf() — value ka index batata hai
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+console.log(fruits.indexOf("Mango"));
+
+//slice() — array ka ek part copy karta hai
+
+let numbers = [10, 20, 30, 40, 50];
+
+let result = numbers.slice(1, 4);
+
+console.log(result);
+
+//splice() — add/remove/change kar sakta hai
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+fruits.splice(1, 1);
+
+console.log(fruits);
+
+//join() — array ko string mein convert karta hai
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+console.log(fruits.join(", ")); 
+
+*/
+
+
+//question for arrays 
+
+
+//  Q1  Loop use karke saare numbers print karo.
+/*
+let numbers = [10, 20, 30, 40, 50];
+
+ for(let i=0;i<numbers.length;i++){
+    console.log(numbers[i]);
+ }
+*/
+
+/*
+ // q2 Loop use karke sirf even numbers print karo.
+
+ let numbers = [10, 20, 30, 40, 50];
+ for(let i=0;i<numbers.length;i++){
+    if(numbers[i]%2===0){
+        console.log(numbers[i]);
+    }
+    
+ }
+    */
+
+
+//q3 Find the sum of all numbers in this array:
+/*
+
+let numbers = [10, 20, 30, 40, 50];
+let sum=0;
+for(let i=0;i<numbersnext .length;i++){
+sum=sum+numbers[i];
+}
+console.log(sum);
+
+*/
+//q4 Find the largest number
+
+/*
+let numbers = [10, 25, 7, 40, 15];
+
+let largest=numbers[0];
+for(let i=0;i<numbers.length;i++){
+    if(largest<numbers[i]){
+        largest=numbers[i];
+    }
+}
+console.log(largest);
+*/
+
+
+
+//objects
+/*
+let obj={
+    name:"utkarsh",
+    age:18,
+    address:"India",
+};
+
+let aa="name";
  
+*/
+
+/*
+let student={
+    name:"utkarsh",
+    age:22,
+
+    address:{
+        city:"varaansi",
+        state:"uttar pradesh",
+    }
+};
+console.log(student.address.state);
+
+*/
+
+ /*
+let person ={
+    name:"utkarsh",
+    age:22
+};
+let {name,age}=person;
+console.log(name);
+console.log(age);
+*/
+
+
+//creat an object for a student with name, age, and isEnroleed.
+/*
+let obj ={
+    name:"harsh",
+    age:22,
+    isEnrolled:true,
+};*/
+
+//can an object key be a number or boolean? try this
+
+
+/*
+const obj={
+    true:"yes",
+    42:"answer",
+
+};
+console.log(obj[true]);
+*/
+//Change Property
+/*
+let person = {
+    name: "Utkarsh",
+    age: 22
+};
+
+person.age = 23;
+
+console.log(person);*/
+
+//Add New Property
+/*
+let person = {
+    name: "Utkarsh",
+    age: 22
+};
+
+person.city = "Jamshedpur";
+
+console.log(person); 
+*/
+
+//Delete Property
+
+/*let person = {
+    name: "Utkarsh",
+    age: 22,
+    city: "Jamshedpur"
+};
+
+delete person.age;
+
+console.log(person);
+*/
+//Pass or Fail
+
+/*
+let student ={
+    name:"utkarsh",
+    marks:75
+};
+
+if(student.marks>=40){
+    console.log("pass");
+}
+else{
+    console.log("fail");
+}
+    */
+
+
+//adult or minor
+/*
+let person = {
+    name: "Utkarsh",
+    age: 22
+};
+
+if (person.age >= 18) {
+    console.log("Adult");
+} else {
+    console.log("Minor");
+}
+    */
+   //access nested property
+/*let student = {
+    name: "Utkarsh",
+    address: {
+        city: "Jamshedpur",
+        state: "Jharkhand"
+    }
+};
+
+console.log(student.address.state);
+*/
